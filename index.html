@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GOMEC Việt Nam — Cơ điện (M&E) | Thi công • Lắp đặt • Bảo trì</title>
+  <meta name="description" content="GOMEC Việt Nam cung cấp giải pháp cơ điện (M&E): thiết kế, thi công, lắp đặt và bảo trì hệ thống điện, HVAC, PCCC, cấp thoát nước cho công trình."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (optional)
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Helvetica Neue","Arial","Noto Sans","Liberation Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Background -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(56,189,248,0.18),transparent_55%),radial-gradient(ellipse_at_bottom,rgba(99,102,241,0.16),transparent_55%)]"></div>
+    <div class="absolute inset-0 opacity-30 bg-[linear-gradient(to_right,rgba(148,163,184,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.06)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+  </div>
+
+  <!-- Top bar -->
+  <div class="border-b border-white/10 bg-slate-950/60 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-2 py-3 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-2 text-sm text-slate-300">
+          <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+          <span>Hỗ trợ khảo sát & báo giá nhanh trong ngày</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-300">
+          <a class="hover:text-white" href="#contact">✉️ Liên hệ tư vấn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-slate-950/50 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <div class="grid h-9 w-9 place-items-center rounded-xl bg-white/10 ring-1 ring-white/10">
+            <!-- Simple logo mark -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-sky-300">
+              <path d="M12 2l8.5 4.9v10.2L12 22l-8.5-4.9V6.9L12 2z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 6v12M7 9l10 6M17 9L7 15" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <div class="font-semibold tracking-tight">GOMEC Việt Nam</div>
+            <div class="text-xs text-slate-400">Cơ điện (M&E) • Thi công • Bảo trì</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+          <a class="hover:text-white" href="#services">Dịch vụ</a>
+          <a class="hover:text-white" href="#capabilities">Năng lực</a>
+          <a class="hover:text-white" href="#projects">Dự án</a>
+          <a class="hover:text-white" href="#process">Quy trình</a>
+          <a class="hover:text-white" href="#faq">FAQ</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="#contact"
+             class="hidden sm:inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200 transition">
+            Nhận báo giá
+          </a>
+          <button id="btnMobile" class="md:hidden inline-flex items-center justify-center rounded-xl bg-white/10 px-3 py-2 ring-1 ring-white/10 hover:bg-white/15 transition" aria-label="Mở menu">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-slate-950/80 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 grid gap-3 text-sm text-slate-200">
+        <a class="hover:text-white" href="#services">Dịch vụ</a>
+        <a class="hover:text-white" href="#capabilities">Năng lực</a>
+        <a class="hover:text-white" href="#projects">Dự án</a>
+        <a class="hover:text-white" href="#process">Quy trình</a>
+        <a class="hover:text-white" href="#faq">FAQ</a>
+        <a class="mt-2 inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 font-semibold text-slate-950 hover:bg-slate-200 transition" href="#contact">
+          Nhận báo giá
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-18 lg:py-20">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 ring-1 ring-white/10 text-sm text-slate-300">
+            <span class="inline-flex h-2 w-2 rounded-full bg-sky-400"></span>
+            <span>Giải pháp cơ điện tối ưu cho công trình</span>
+          </div>
+          <h1 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+            Thi công <span class="text-sky-300">M&E</span> chuẩn kỹ thuật —
+            vận hành ổn định, tiết kiệm chi phí vòng đời
+          </h1>
+          <p class="mt-5 text-slate-300 leading-relaxed">
+            GOMEC Việt Nam cung cấp dịch vụ thiết kế, thi công, lắp đặt và bảo trì hệ thống cơ điện
+            cho nhà xưởng, tòa nhà, dự án thương mại: <b>Điện</b>, <b>HVAC</b>, <b>PCCC</b>, <b>Cấp thoát nước</b>…
+          </p>
+
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href="#contact"
+               class="inline-flex items-center justify-center rounded-xl bg-sky-400 px-5 py-3 font-semibold text-slate-950 hover:bg-sky-300 transition">
+              Yêu cầu khảo sát miễn phí
+            </a>
+            <a href="#services"
+               class="inline-flex items-center justify-center rounded-xl bg-white/10 px-5 py-3 font-semibold text-white ring-1 ring-white/10 hover:bg-white/15 transition">
+              Xem dịch vụ
+            </a>
+          </div>
+
+          <!-- Trust chips -->
+          <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-semibold">10+ năm</div>
+              <div class="text-xs text-slate-400 mt-1">Kinh nghiệm triển khai</div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-semibold">Nghiệm thu</div>
+              <div class="text-xs text-slate-400 mt-1">Theo tiêu chuẩn dự án</div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-semibold">An toàn</div>
+              <div class="text-xs text-slate-400 mt-1">Quy trình & hồ sơ đầy đủ</div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+              <div class="text-2xl font-semibold">Bảo hành</div>
+              <div class="text-xs text-slate-400 mt-1">Hỗ trợ vận hành</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.30),transparent_45%),radial-gradient(circle_at_70%_80%,rgba(99,102,241,0.25),transparent_50%)]"></div>
+            <div class="relative p-6 sm:p-8">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="text-sm text-slate-300">Công ty cổ phần</div>
+                  <div class="mt-1 text-xl font-semibold">CƠ ĐIỆN GOMEC VIỆT NAM</div>
+                  <div class="mt-1 text-sm text-slate-400">GOMEC VIET NAM MECHANIC ELECTRIC JOINT STOCK COMPANY</div>
+                </div>
+                <span class="inline-flex items-center rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-semibold text-emerald-200 ring-1 ring-emerald-400/30">
+                  Đang nhận dự án
+                </span>
+              </div>
+
+              <dl class="mt-6 space-y-3 text-sm">
+                <div class="flex gap-3">
+                  <dt class="w-24 shrink-0 text-slate-400">MST/DN</dt>
+                  <dd class="text-slate-200 font-medium">0108476330</dd>
+                </div>
+                <div class="flex gap-3">
+                  <dt class="w-24 shrink-0 text-slate-400">Địa chỉ</dt>
+                  <dd class="text-slate-200 font-medium">
+                    Số 68, liền kề 23, KĐT mới Vân Canh, Xã Vân Canh, Huyện Hoài Đức, Hà Nội
+                  </dd>
+                </div>
+              </dl>
+
+              <div class="mt-7 grid gap-3 sm:grid-cols-2">
+                <a href="#contact" class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10 hover:bg-white/15 transition">
+                  <div class="text-sm font-semibold">📋 Nhận báo giá</div>
+                  <div class="mt-1 text-xs text-slate-400">Gửi yêu cầu, phản hồi nhanh</div>
+                </a>
+                <a href="#projects" class="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10 hover:bg-white/15 transition">
+                  <div class="text-sm font-semibold">🧩 Hồ sơ năng lực</div>
+                  <div class="mt-1 text-xs text-slate-400">Danh mục & kinh nghiệm</div>
+                </a>
+              </div>
+
+              <div class="mt-6 rounded-2xl bg-slate-950/50 p-4 ring-1 ring-white/10">
+                <div class="text-xs text-slate-400">Gợi ý</div>
+                <div class="mt-1 text-sm text-slate-200">
+                  Có bản vẽ / BOQ? Đính kèm khi liên hệ để được dự toán chính xác hơn.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Dịch vụ chính</h2>
+          <p class="mt-2 text-slate-300 max-w-2xl">
+            Từ tư vấn giải pháp đến thi công & bảo trì — tập trung vào an toàn, chất lượng và hiệu quả vận hành.
+          </p>
+        </div>
+        <a href="#contact" class="text-sm font-semibold text-sky-300 hover:text-sky-200">Nhận tư vấn →</a>
+      </div>
+
+      <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Card -->
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 hover:bg-white/7 transition">
+          <div class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center rounded-2xl bg-sky-400/15 ring-1 ring-sky-400/20">
+              <svg class="h-6 w-6 text-sky-300" viewBox="0 0 24 24" fill="none">
+                <path d="M4 13h6v7H4v-7ZM14 4h6v16h-6V4Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 8h4v12h-4V8Z" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Thi công hệ thống điện</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Tủ điện, cáp động lực/chiếu sáng, tiếp địa, chống sét, kiểm định và nghiệm thu theo yêu cầu dự án.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Thiết kế – shopdrawing – asbuilt</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Biện pháp thi công & an toàn</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Hồ sơ QA/QC đầy đủ</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 hover:bg-white/7 transition">
+          <div class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center rounded-2xl bg-indigo-400/15 ring-1 ring-indigo-400/20">
+              <svg class="h-6 w-6 text-indigo-300" viewBox="0 0 24 24" fill="none">
+                <path d="M4 14c3-5 13-5 16 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 10l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+                <path d="M6 21h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">HVAC & thông gió</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Lắp đặt điều hòa trung tâm/VRV, AHU/FCU, đường ống gió, cân chỉnh và bàn giao vận hành.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Tối ưu tải lạnh & tiết kiệm điện</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Cân bằng gió – đo kiểm</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Bảo trì định kỳ</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 hover:bg-white/7 transition">
+          <div class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center rounded-2xl bg-rose-400/15 ring-1 ring-rose-400/20">
+              <svg class="h-6 w-6 text-rose-300" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2s6 4 6 10a6 6 0 0 1-12 0C6 6 12 2 12 2Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 8c1.2 1 2 2.1 2 3.5A2 2 0 1 1 10 11.5C10 10.1 10.8 9 12 8Z" stroke="currentColor" stroke-width="1.5" opacity="0.85"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">PCCC (MEP)</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Thi công hệ thống báo cháy, chữa cháy (sprinkler, họng nước), bơm PCCC, test & nghiệm thu.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Bám sát tiêu chuẩn & bản vẽ</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Test áp – test chức năng</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Bàn giao hồ sơ hoàn công</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 hover:bg-white/7 transition">
+          <div class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center rounded-2xl bg-emerald-400/15 ring-1 ring-emerald-400/20">
+              <svg class="h-6 w-6 text-emerald-300" viewBox="0 0 24 24" fill="none">
+                <path d="M7 7c4-4 10 2 6 6l-7 7H3v-3l7-7c2-2 0-4-3-3Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M14 10l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Cấp thoát nước</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Đường ống cấp, thoát, bơm tăng áp, xử lý nước thải theo công năng công trình và vận hành thực tế.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Thi công gọn – sạch – đúng tiến độ</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Test rò rỉ – áp lực</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Tư vấn vật tư phù hợp</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 hover:bg-white/7 transition">
+          <div class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center rounded-2xl bg-amber-400/15 ring-1 ring-amber-400/20">
+              <svg class="h-6 w-6 text-amber-300" viewBox="0 0 24 24" fill="none">
+                <path d="M4 20V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Bảo trì & vận hành</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Gói bảo trì M&E theo tháng/quý/năm: kiểm tra, vệ sinh, thay thế vật tư, khắc phục sự cố.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> SLA rõ ràng</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Nhật ký & báo cáo định kỳ</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Khuyến nghị tối ưu năng lượng</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 hover:bg-white/7 transition">
+          <div class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center rounded-2xl bg-violet-400/15 ring-1 ring-violet-400/20">
+              <svg class="h-6 w-6 text-violet-300" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M5 20h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Tư vấn – thiết kế</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">
+            Tư vấn giải pháp, bóc tách khối lượng, dự toán, thiết kế kỹ thuật & shopdrawing theo yêu cầu.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Bám ngân sách & tiến độ</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Tối ưu vật tư/thiết bị</li>
+            <li class="flex gap-2"><span class="text-emerald-300">✓</span> Hỗ trợ hồ sơ thầu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section id="capabilities" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+        <div class="lg:col-span-6">
+          <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Năng lực triển khai</h2>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Tập trung 3 trụ cột: <b>chất lượng kỹ thuật</b>, <b>an toàn</b>, <b>tiến độ</b>.
+            Triển khai theo quy trình hồ sơ, nghiệm thu theo hạng mục và bàn giao vận hành.
+          </p>
+
+          <div class="mt-6 space-y-4">
+            <div class="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10">
+              <div class="flex items-start gap-3">
+                <div class="mt-1 h-9 w-9 shrink-0 grid place-items-center rounded-2xl bg-emerald-400/15 ring-1 ring-emerald-400/20">✅</div>
+                <div>
+                  <div class="font-semibold">QA/QC & nghiệm thu hạng mục</div>
+                  <div class="text-sm text-slate-300 mt-1">
+                    Checklist, test function, test áp, đo kiểm… lưu trữ biên bản và as-built rõ ràng.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10">
+              <div class="flex items-start gap-3">
+                <div class="mt-1 h-9 w-9 shrink-0 grid place-items-center rounded-2xl bg-sky-400/15 ring-1 ring-sky-400/20">🛡️</div>
+                <div>
+                  <div class="font-semibold">An toàn lao động & PCCC công trường</div>
+                  <div class="text-sm text-slate-300 mt-1">
+                    Biện pháp thi công, kiểm soát rủi ro, đào tạo & giám sát an toàn theo quy định dự án.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10">
+              <div class="flex items-start gap-3">
+                <div class="mt-1 h-9 w-9 shrink-0 grid place-items-center rounded-2xl bg-indigo-400/15 ring-1 ring-indigo-400/20">⏱️</div>
+                <div>
+                  <div class="font-semibold">Tổ chức tiến độ & phối hợp liên bộ môn</div>
+                  <div class="text-sm text-slate-300 mt-1">
+                    Lập tiến độ chi tiết, phối hợp kiến trúc/kết cấu/MEP, giảm xung đột và phát sinh.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 overflow-hidden">
+            <div class="p-6 sm:p-8">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold">Cam kết dịch vụ</h3>
+                <span class="text-xs text-slate-400">Tùy quy mô dự án</span>
+              </div>
+
+              <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
+                  <div class="text-sm font-semibold">Minh bạch khối lượng</div>
+                  <div class="mt-1 text-xs text-slate-400">BOQ, vật tư, thiết bị rõ ràng</div>
+                </div>
+                <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
+                  <div class="text-sm font-semibold">Tối ưu vòng đời</div>
+                  <div class="mt-1 text-xs text-slate-400">Giảm OPEX, nâng độ ổn định</div>
+                </div>
+                <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
+                  <div class="text-sm font-semibold">Bàn giao vận hành</div>
+                  <div class="mt-1 text-xs text-slate-400">HDSD, training & checklist</div>
+                </div>
+                <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
+                  <div class="text-sm font-semibold">Bảo hành & hỗ trợ</div>
+                  <div class="mt-1 text-xs text-slate-400">Xử lý sự cố theo SLA</div>
+                </div>
+              </div>
+
+              <div class="mt-6 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+                <div class="text-sm font-semibold">Bạn cần triển khai hạng mục nào?</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">Điện</span>
+                  <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">HVAC</span>
+                  <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">PCCC</span>
+                  <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">Cấp thoát nước</span>
+                  <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">Bảo trì</span>
+                </div>
+                <a href="#contact" class="mt-4 inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200 transition">
+                  Gửi yêu cầu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+      <div class="mt-8 grid gap-5 lg:grid-cols-3">
+        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 overflow-hidden">
+          <div class="h-36 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.35),transparent_60%),linear-gradient(120deg,rgba(15,23,42,0.9),rgba(30,41,59,0.65))]"></div>
+          <div class="p-6">
+            <div class="text-sm text-slate-400">Nhà xưởng</div>
+            <div class="mt-1 font-semibold">Hệ thống điện & chiếu sáng</div>
+            <p class="mt-2 text-sm text-slate-300">
+              Thi công tủ điện, kéo cáp, máng cáp, chiếu sáng khu vực sản xuất; nghiệm thu theo tiến độ.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">Điện</span>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">QA/QC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 overflow-hidden">
+          <div class="h-36 bg-[radial-gradient(circle_at_70%_30%,rgba(99,102,241,0.35),transparent_60%),linear-gradient(120deg,rgba(15,23,42,0.9),rgba(30,41,59,0.65))]"></div>
+          <div class="p-6">
+            <div class="text-sm text-slate-400">Tòa nhà</div>
+            <div class="mt-1 font-semibold">HVAC & thông gió</div>
+            <p class="mt-2 text-sm text-slate-300">
+              Lắp đặt VRV/FCU, ống gió, bảo ôn; cân bằng gió và bàn giao vận hành.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">HVAC</span>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 overflow-hidden">
+          <div class="h-36 bg-[radial-gradient(circle_at_50%_50%,rgba(244,63,94,0.30),transparent_60%),linear-gradient(120deg,rgba(15,23,42,0.9),rgba(30,41,59,0.65))]"></div>
+          <div class="p-6">
+            <div class="text-sm text-slate-400">Thương mại</div>
+            <div class="mt-1 font-semibold">PCCC tổng thể</div>
+            <p class="mt-2 text-sm text-slate-300">
+              Báo cháy, sprinkler, bơm PCCC; test áp và nghiệm thu từng hạng mục.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">PCCC</span>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs ring-1 ring-white/10">Nghiệm thu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Quy trình làm việc</h2>
+      <p class="mt-2 text-slate-300 max-w-2xl">
+        Rõ ràng từ khảo sát đến bàn giao — giúp kiểm soát rủi ro, chất lượng và tiến độ.
+      </p>
+
+      <div class="mt-8 grid gap-5 lg:grid-cols-4">
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <div class="text-xs text-slate-400">Bước 01</div>
+          <div class="mt-2 font-semibold">Tiếp nhận yêu cầu</div>
+          <div class="mt-2 text-sm text-slate-300">Thu thập bản vẽ/BOQ, mục tiêu, tiến độ, tiêu chuẩn dự án.</div>
+        </div>
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <div class="text-xs text-slate-400">Bước 02</div>
+          <div class="mt-2 font-semibold">Khảo sát & đề xuất</div>
+          <div class="mt-2 text-sm text-slate-300">Khảo sát hiện trạng, đề xuất giải pháp tối ưu kỹ thuật & chi phí.</div>
+        </div>
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <div class="text-xs text-slate-400">Bước 03</div>
+          <div class="mt-2 font-semibold">Thi công & QA/QC</div>
+          <div class="mt-2 text-sm text-slate-300">Thi công theo biện pháp; nghiệm thu hạng mục; cập nhật hồ sơ.</div>
+        </div>
+        <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <div class="text-xs text-slate-400">Bước 04</div>
+          <div class="mt-2 font-semibold">Bàn giao & bảo hành</div>
+          <div class="mt-2 text-sm text-slate-300">Training vận hành; bàn giao as-built; hỗ trợ bảo hành/bảo trì.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Câu hỏi thường gặp</h2>
+          <p class="mt-2 text-slate-300 max-w-2xl">
+            Một vài câu hỏi phổ biến trước khi triển khai dự án M&E.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-4 lg:grid-cols-2">
+        <details class="group rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <summary class="cursor-pointer list-none font-semibold flex items-center justify-between">
+            <span>Thời gian báo giá mất bao lâu?</span>
+            <span class="ml-4 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-300">
+            Thường 1–3 ngày làm việc tùy khối lượng. Nếu có đầy đủ bản vẽ/BOQ và tiêu chuẩn, thời gian sẽ nhanh hơn.
+          </p>
+        </details>
+
+        <details class="group rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <summary class="cursor-pointer list-none font-semibold flex items-center justify-between">
+            <span>Công ty có nhận bảo trì định kỳ không?</span>
+            <span class="ml-4 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-300">
+            Có. Có thể theo tháng/quý/năm, kèm checklist, nhật ký và báo cáo tình trạng thiết bị.
+          </p>
+        </details>
+
+        <details class="group rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <summary class="cursor-pointer list-none font-semibold flex items-center justify-between">
+            <span>Hồ sơ bàn giao gồm những gì?</span>
+            <span class="ml-4 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-300">
+            Tùy dự án: biên bản nghiệm thu, as-built, hướng dẫn vận hành, catalogue/CO-CQ (nếu yêu cầu), checklist test.
+          </p>
+        </details>
+
+        <details class="group rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+          <summary class="cursor-pointer list-none font-semibold flex items-center justify-between">
+            <span>Làm sao để hạn chế phát sinh?</span>
+            <span class="ml-4 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-300">
+            Khuyến nghị chốt phạm vi, bản vẽ/shopdrawing, tiêu chuẩn vật tư ngay từ đầu; phối hợp liên bộ môn để tránh xung đột.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+      <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
+        <div class="lg:col-span-5">
+          <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Liên hệ & nhận báo giá</h2>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Gửi thông tin dự án của bạn — đội ngũ kỹ thuật sẽ phản hồi nhanh để thống nhất phương án và tiến độ.
+          </p>
+
+          <div class="mt-6 space-y-4">
+            <div class="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10">
+              <div class="text-sm text-slate-400">CÔNG TY CỔ PHẦN CƠ ĐIỆN GOMEC VIỆT NAM</div>
+              <div class="mt-3 text-sm">
+                <div class="text-slate-200 font-semibold">Địa chỉ</div>
+                <div class="text-slate-300">
+                  Số 68, liền kề 23, KĐT mới Vân Canh, Xã Vân Canh, Huyện Hoài Đức, Hà Nội
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10">
+              <div class="font-semibold">Bạn có thể gửi kèm</div>
+              <ul class="mt-2 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><span class="text-emerald-300">✓</span> Bản vẽ PDF/DWG, BOQ</li>
+                <li class="flex gap-2"><span class="text-emerald-300">✓</span> Hình ảnh hiện trạng</li>
+                <li class="flex gap-2"><span class="text-emerald-300">✓</span> Mốc tiến độ & yêu cầu nghiệm thu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl bg-white/5 p-6 sm:p-8 ring-1 ring-white/10">
+            <form onsubmit="return handleSubmit(event)" class="grid gap-4 sm:grid-cols-2">
+              <div class="sm:col-span-1">
+                <label class="text-sm text-slate-300">Họ và tên</label>
+                <input required name="name" class="mt-2 w-full rounded-xl bg-slate-950/60 px-4 py-3 text-slate-100 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400/50" placeholder="Nguyễn Văn A"/>
+              </div>
+
+              <div class="sm:col-span-1">
+                <label class="text-sm text-slate-300">Số điện thoại</label>
+                <input required name="phone" inputmode="tel" class="mt-2 w-full rounded-xl bg-slate-950/60 px-4 py-3 text-slate-100 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400/50" placeholder="09xx xxx xxx"/>
+              </div>
+
+              <div class="sm:col-span-1">
+                <label class="text-sm text-slate-300">Email</label>
+                <input name="email" type="email" class="mt-2 w-full rounded-xl bg-slate-950/60 px-4 py-3 text-slate-100 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400/50" placeholder="email@congty.com"/>
+              </div>
+
+              <div class="sm:col-span-1">
+                <label class="text-sm text-slate-300">Hạng mục quan tâm</label>
+                <select name="scope" class="mt-2 w-full rounded-xl bg-slate-950/60 px-4 py-3 text-slate-100 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-sky-400/50">
+                  <option>Điện</option>
+                  <option>HVAC</option>
+                  <option>PCCC</option>
+                  <option>Cấp thoát nước</option>
+                  <option>Bảo trì M&E</option>
+                  <option>Khác</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="text-sm text-slate-300">Mô tả dự án</label>
+                <textarea required name="message" rows="5" class="mt-2 w-full rounded-xl bg-slate-950/60 px-4 py-3 text-slate-100 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400/50" placeholder="Quy mô, địa điểm, thời gian dự kiến, yêu cầu vật tư/tiêu chuẩn..."></textarea>
+              </div>
+
+              <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+                <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-sky-400 px-5 py-3 font-semibold text-slate-950 hover:bg-sky-300 transition">
+                  Gửi yêu cầu
+                </button>
+              </div>
+
+              <div id="formToast" class="hidden sm:col-span-2 rounded-2xl bg-emerald-400/10 p-4 ring-1 ring-emerald-400/20 text-sm text-emerald-200">
+                Đã ghi nhận thông tin (demo). Bạn có thể tích hợp gửi email/CRM theo nhu cầu.
+              </div>
+            </form>
+          </div>
+
+          <div class="mt-6 rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <div class="font-semibold">Cần gấp? Gọi trực tiếp để chốt lịch khảo sát</div>
+              </div>
+              <a href="tel:+842432008920" class="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200 transition">
+                Gọi ngay
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid gap-8 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3">
+            <div class="grid h-10 w-10 place-items-center rounded-xl bg-white/10 ring-1 ring-white/10">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-sky-300">
+                <path d="M12 2l8.5 4.9v10.2L12 22l-8.5-4.9V6.9L12 2z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 6v12M7 9l10 6M17 9L7 15" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold">GOMEC Việt Nam</div>
+              <div class="text-sm text-slate-400">Giải pháp cơ điện cho công trình</div>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-300 leading-relaxed">
+            Thi công M&E: Điện • HVAC • PCCC • Cấp thoát nước • Bảo trì vận hành.
+          </p>
+        </div>
+
+        <div class="lg:col-span-3">
+          <div class="font-semibold">Điều hướng</div>
+          <ul class="mt-3 space-y-2 text-sm text-slate-300">
+            <li><a class="hover:text-white" href="#services">Dịch vụ</a></li>
+            <li><a class="hover:text-white" href="#capabilities">Năng lực</a></li>
+            <li><a class="hover:text-white" href="#projects">Dự án</a></li>
+            <li><a class="hover:text-white" href="#process">Quy trình</a></li>
+            <li><a class="hover:text-white" href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="font-semibold">Thông tin doanh nghiệp</div>
+          <div class="mt-3 text-sm text-slate-300 space-y-2">
+            <div><span class="text-slate-400">Tên:</span> CÔNG TY CỔ PHẦN CƠ ĐIỆN GOMEC VIỆT NAM</div>
+            <div><span class="text-slate-400">MST/DN:</span> 0108476330</div>
+            <div><span class="text-slate-400">Địa chỉ:</span> Số 68, liền kề 23, KĐT mới Vân Canh, Xã Vân Canh, Huyện Hoài Đức, Hà Nội</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-white/10 pt-6 text-xs text-slate-500">
+        <div>© <span id="year"></span> GOMEC Việt Nam. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a class="hover:text-slate-300" href="#">Chính sách</a>
+          <a class="hover:text-slate-300" href="#">Điều khoản</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('btnMobile');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Year
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+
+    // Demo form handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const toast = document.getElementById('formToast');
+      toast.classList.remove('hidden');
+
+      // You can integrate sending here:
+      // - POST to your backend API
+      // - Send via Email service (SMTP/SendGrid/Mailgun)
+      // - Push to CRM
+      e.target.reset();
+
+      setTimeout(() => toast.classList.add('hidden'), 5000);
+      return false;
+    }
+
+    // Smooth scroll (basic)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (!id || id === '#') return;
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        menu?.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
